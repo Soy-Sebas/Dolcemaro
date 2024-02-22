@@ -1,0 +1,108 @@
+---
+import Container from "../Container.astro";
+import MenuIcon from "../icons/MenuIcon.astro";
+import Astronav from "../elementHeader/AstroNav.astro";
+import MenuItems from "../elementHeader/MenuItems.astro";
+import Dropdown from "../elementHeader/Dropdown.astro";
+import Link from "../elementHeader/Link.astro";
+import ThemeToggle from "../ThemeToggle.astro";
+
+const navItems = [
+    {
+        title: "Páginas",
+        url: "#",
+        children: [
+            { title: "Herramientas Digitales", url: "/" },
+            { title: "Programación y Desarrollo", url: "/" },
+            { title: "Data", url: "/" },
+            { title: "Inteligencia Artificial", url: "/" },
+            { title: "Contabilidad", url: "/" },
+            { title: "Auditoría y Consultoría", url: "/" },
+            { title: "Tributaria", url: "/" },
+        ],
+    },
+    {
+        title: "Inventario",
+        url: "/inventario",
+    },
+    {
+        title: "Sobre Nosotros",
+        url: "/about",
+    },
+    {
+        title: "Blog",
+        url: "/blog",
+    },
+    {
+        title: "Contacto",
+        url: "/contacto",
+    },
+];
+---
+
+<Container>
+    <header
+        class="fixed top-0 left-0 right-0 z-10 px-2 border border-transparent bg-transparent py-2 flex flex-col lg:flex-row justify-between"
+        id="header-nav"
+    >
+        <Astronav>
+            <div
+                class="flex w-full lg:w-auto lg:ml-32 items-center justify-between"
+            >
+                <a
+                    href="/"
+                    class="text-lg lg:mr-32 flex items-center flex-wrap"
+                >
+                    <span class="font-bold text-black dark:text-white"
+                        >Dolceamaro S.A</span
+                    >
+                </a>
+                <div class="block lg:hidden">
+                    <MenuIcon class="w-4 h-4 text-slate-300" />
+                </div>
+            </div>
+            <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+                <ul class="flex flex-col lg:flex-row lg:gap-3">
+                    {
+                        navItems.map((item, index) => (
+                            <>
+                                {item.children && (
+                                    <Dropdown
+                                        title={item.title}
+                                        children={item.children}
+                                        lastItem={index === navItems.length - 1}
+                                    />
+                                )}
+                                {!item.children && (
+                                    <li>
+                                        <a
+                                            href={item.url}
+                                            class="flex lg:px-3 py-2 items-center text-gray-200 hover:text-blue-500 hover:font-bold hover:bg-neutral-400/40"
+                                        >
+                                            <span> {item.title}</span>
+                                        </a>
+                                    </li>
+                                )}
+                            </>
+                        ))
+                    }
+                </ul>
+                <div class="lg:hidden flex items-center mt-3 gap-4">
+                    <Link href="/" style="muted" block size="md">
+                        Iniciar Sesión
+                    </Link>
+                    <Link href="/" size="md" block>Crear Cuenta</Link>
+                </div>
+            </MenuItems>
+        </Astronav>
+        <div>
+            <div class="hidden lg:flex items-center gap-4">
+                <ThemeToggle
+                    class="absolute top-1/2 transform -translate-y-1/2"
+                />
+                <a class="text-white" href="/">Iniciar Sesión</a>
+                <Link href="/" size="md">Crear Cuenta</Link>
+            </div>
+        </div>
+    </header>
+</Container>
