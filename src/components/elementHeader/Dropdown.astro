@@ -7,7 +7,7 @@ const { title, lastItem, children} = Astro.props;
 <li class="relative">
   <DropdownContainer class="group">
     <button
-      class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-200 hover:text-blue-500 hover:font-bold hover:bg-neutral-400/40"
+      class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-black dark:text-gray-200 hover:text-[#5503af] hover:font-bold hover:bg-neutral-400/40"
     >
       <span>{title}</span>
       <svg
@@ -34,7 +34,7 @@ const { title, lastItem, children} = Astro.props;
         ]}
       >
         <div
-          class="px-3 lg:py-2 lg:bg-gray-700 lg:rounded-md lg:shadow lg:border flex flex-col"
+          class="px-3 lg:py-2 lg:dark:bg-neutral-950  backdrop-blur-md lg:rounded-md lg:shadow lg:border flex flex-col"
         >
           {
             children.map(
@@ -44,7 +44,7 @@ const { title, lastItem, children} = Astro.props;
               }) => (
                 <a
                   href={item.url}
-                  class="py-1 text-gray-200  hover:bg-neutral-400/40"
+                  class="py-1 text-black dark:text-gray-200  hover:bg-neutral-400/40"
                 >
                   {item.title}
                 </a>
