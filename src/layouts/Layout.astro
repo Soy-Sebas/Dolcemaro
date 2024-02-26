@@ -21,13 +21,6 @@ const { description, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="fixed left-0 top-0 -z-10 h-full w-full">
-			<div
-				class="absolute top-0 z-[-2] h-screen w-screen dark:bg-neutral-950"
-				style="background-image:linear-gradient(38.73deg, rgba(204, 0, 187, 0.25) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(108, 0, 209, 0.25) 100%)"
-			>
-			</div>
-		</div>
 		<Header />
 		<slot />
 	</body>
@@ -89,9 +82,9 @@ const { description, title } = Astro.props;
 		background-image: linear-gradient(
 			-250deg,
 			#fff 0%,
-			#3d79ff 29%,
-			#5489ff 67%,
-			#6f9cff 100%
+			#5503af 29%,
+			#6f17ce 67%,
+			#8f41e2 100%
 		);
 		background-size: 200% auto;
 		color: #fff;
@@ -104,6 +97,20 @@ const { description, title } = Astro.props;
 	@keyframes textclip {
 		to {
 			background-position: -200% center;
+		}
+	}
+	.imagenlogo{
+		animation: rotar 5s linear infinite;
+	}
+	.imagenlogo:hover{
+		cursor: pointer
+	}
+	@keyframes rotar{
+		from{
+			transform: rotateY(180deg);
+		}
+		to{
+			transform: rotateY(-180deg);
 		}
 	}
 </style>
