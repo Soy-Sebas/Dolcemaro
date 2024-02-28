@@ -1,58 +1,71 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout
     title="Sobre nosotros Dolceamaro"
     description="La mejor página de tu vida"
 >
-    <div class="divaccordion py-56">
-        <ul class="accordion">
-            <li>
-                <img src="/s1.JPG" />
-                <div class="content">
-                    <span>
-                        <h2>Sebastián Gutiérrez</h2>
-                        <p>Presidente</p>
-                    </span>
-                </div>
-            </li>
-            <li>
-                <img src="/v1.JPG" />
-                <div class="content">
-                    <span>
-                        <h2>Valeria Cruz</h2>
-                        <p>Director de Ventas</p>
-                    </span>
-                </div>
-            </li>
-            <li>
-                <img src="/j1.JPG" />
-                <div class="content">
-                    <span>
-                        <h2>Juan David Bonilla</h2>
-                        <p>Director de Producción</p>
-                    </span>
-                </div>
-            </li>
-            <li>
-                <img src="/vivi1.JPG" />
-                <div class="content">
-                    <span>
-                        <h2>Viviana Moreno</h2>
-                        <p>Director de Contabilidad</p>
-                    </span>
-                </div>
-            </li>
-            <li>
-                <img src="/js1.JPG" />
-                <div class="content">
-                    <span>
-                        <h2>Justin Estevez</h2>
-                        <p>Director Recursos Humanos</p>
-                    </span>
-                </div>
-            </li>
-        </ul>
+    <div
+        class="absolute items-center text-center w-full max-w-screen mt-auto mx-auto py-24"
+    >
+        <h1 class="text-black text-5xl font-semibold">Nuestro Equipo</h1>
+        <p class="py-2">
+            Especializados en diseñar y ejecutar soluciones<br />
+            únicas para impulsar el éxito en cada proyecto.
+        </p>
     </div>
+    <section>
+        <div class="divaccordion py-56">
+            <ul class="accordion">
+                <li>
+                    <img src="/s1.JPG" />
+                    <div class="content">
+                        <span>
+                            <h2>Sebastián Gutiérrez</h2>
+                            <p>Presidente</p>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="/v1.JPG" />
+                    <div class="content">
+                        <span>
+                            <h2>Valeria Cruz</h2>
+                            <p>Directora de Ventas</p>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="/j1.JPG" />
+                    <div class="content">
+                        <span>
+                            <h2>Juan David Bonilla</h2>
+                            <p>Director de Producción</p>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="/vivi1.JPG" />
+                    <div class="content">
+                        <span>
+                            <h2>Viviana Moreno</h2>
+                            <p>Directora de Finanzas</p>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="/js1.JPG" />
+                    <div class="content">
+                        <span>
+                            <h2>Justin Estevez</h2>
+                            <p>Director Recursos Humanos</p>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <Footer></Footer>
 </Layout>
