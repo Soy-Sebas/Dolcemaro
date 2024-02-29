@@ -1,0 +1,91 @@
+<footer class="top">
+        <img  class="max-w-[200px]" src="/Ddremovebg.png"/>
+    <div class="links">
+        <div>
+            <h2>Página</h2>
+            <a>Historia</a>
+            <a>Inventario</a>
+            <a>Sobre Nosotros</a>
+            <a>Blog</a>
+            <a>Contacto</a>
+        </div>
+        <div>
+            <h2>Cloud</h2>
+            <a>Dashboard</a>
+            <a>Excel Proyecto</a>
+            <a>Video</a>
+            <a>Presentación</a>
+        </div>
+    </div>
+</footer>
+<footer class="bottom">
+    <div class="legal">
+        <span>© 2024 Todos los derechos a Sebastian Gutierrez Guayacundo</span>
+        <a>Licencia</a>
+        <a>Terminos</a>
+        <a>Privacidad</a>
+
+    </div>
+    <div class="links">
+        <a class="fa-brands fa-gmail"></a>
+        <a class="fa-brands fa-page"></a>
+        <a class="fa-brands fa-seb"></a>
+        <a class="fa-brands fa-pwc"></a>
+    </div>
+
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        margin: 0 0px;
+        color: #a2b5cd;
+        background: #694a8a;
+    }
+
+    footer.top{
+        padding-top: 20px;
+        border-bottom:  solid #fff;
+        padding-bottom: 20px;
+    }
+
+
+    footer.top .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    footer.bottom {
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    footer .links > div{
+        display: grid;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    footer h2 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #f7f7f7;
+    }
+
+    footer.legal > a{
+        margin: 0 4px;
+    }
+
+    footer.legal > span {
+        margin-right: 10px;
+    }
+
+    footer.bottom .links{
+        display: flex;
+        gap: 18px;
+    }
+</style>
