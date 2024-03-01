@@ -1,7 +1,37 @@
 ---
-    import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro";
+import HistoriaItem from "../components/HistoriaItem.astro";
+const EXPERIENCIE = [
+    {
+        date: "Enero-22-2023",
+        title: "LA ENTRADA",
+        company: "SERVICIO NACIONAL DE APRENDIZAJE",
+        description:
+            "La entrada al Servicio Nacional de Aprendizaje es un umbral hacia el conocimiento y la transformación. Al cruzar sus puertas, te sumerges en un ambiente vibrante de aprendizaje y oportunidades. El bullicio de estudiantes y profesores crea un ambiente de energía y dedicación. Los pasillos están impregnados de un sentido de propósito y aspiración, donde cada paso te acerca más a tus metas educativas y profesionales. Los murales y carteles inspiradores adornan las paredes, recordándote el poder del conocimiento y la dedicación. Es un lugar donde las mentes curiosas y los corazones ambiciosos se encuentran para construir un futuro brillante.",
+        link: "https://twitch.tv/midudev",
+    },
+    {
+        date: "Enero-22-2023",
+        title: "SOMOS OFERTA CERRADA",
+        company: "PRICEWATERHOUSECOOPERS: PWC",
+        description:
+            "Declaramos con orgullo que SOMOS OFERTA CERRADA. Esta afirmación simboliza nuestro compromiso con la excelencia, la integridad y la calidad en cada aspecto de nuestro trabajo. En un mundo lleno de desafíos y competencia, destacamos como líderes en nuestra industria al ofrecer soluciones innovadoras y resultados excepcionales. Nuestro equipo dedicado y talentoso sigue siendo la piedra angular de nuestro éxito, y juntos continuaremos superando expectativas y alcanzando nuevos horizontes. ¡Gracias por ser parte de nuestro viaje hacia la excelencia!",
+        link: "https://twitch.tv/midudev",
+    },
+];
 ---
 
-<Layout title="Sobre nosotros Dolceamaro" description="La mejor página de tu vida">
-
+<Layout
+    title="Sobre nosotros Dolceamaro"
+    description="La mejor página de tu vida"
+>
+    <ol class="relative mt-36">
+        {
+            EXPERIENCIE.map((experiencie) => (
+                <li class="">
+                    <HistoriaItem {...experiencie} />
+                </li>
+            ))
+        }
+    </ol>
 </Layout>

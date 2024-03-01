@@ -1,0 +1,81 @@
+---
+// import { Icon } from '../components/icons/Icon.astro';
+
+const features = [
+    {
+        name: "Colecciones Exclusivas",
+        description:
+            "Cada colección es cuidadosamente diseñada para reflejar la diversidad y singularidad de nuestros clientes. Desde elegantes atuendos de noche hasta ropa casual de diario, nuestras colecciones abrazan la individualidad y la diversidad de estilos.",
+    },
+    {
+        name: "Personalización de Estilo",
+        description:
+            "¿Buscas algo único? Nuestro servicio de personalización te permite crear prendas a medida que reflejen tu estilo personal. Desde ajustes de tamaño hasta detalles de diseño, hacemos que cada prenda sea verdaderamente tuya.",
+    },
+    {
+        name: "Inspiración y Consejos de Moda",
+        description:
+            "Sumérgete en nuestro mundo de moda y descubre inspiración ilimitada y consejos de estilo. Desde guías de tendencias hasta sugerencias de combinaciones de prendas, estamos aquí para ayudarte a expresar tu estilo de manera auténtica y personal.",
+    },
+    {
+        name: "Comunidad de Moda",
+        description:
+            "Únete a nuestra vibrante comunidad de moda donde puedes compartir tus ideas, inspirarte con otros estilos únicos y conectarte con personas que comparten tu pasión por la moda. Celebra tu individualidad y encuentra tu tribu en Dolcemaro.",
+    },
+    {
+        name: "Calidad y Elegancia",
+        description:
+            "La calidad es una prioridad. Nos esforzamos por ofrecer prendas de alta calidad con atención al detalle y materiales premium. Cada pieza es una declaración de elegancia y estilo atemporal.",
+    },
+    {
+        name: "Moda Sostenible",
+        description:
+            "Abrazamos la moda sostenible. Nuestras prendas reflejan nuestro compromiso con el medio ambiente y las comunidades locales. Con nosotros, puedes lucir bien y sentirte bien sabiendo que contribuyes a un mundo mejor.",
+    },
+];
+---
+
+<div class="bg-gray-100 py-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+            <h2
+                class="text-base font-semibold uppercase tracking-wide text-purple-800"
+            >
+                Características de Dolcemaro S.A
+            </h2>
+            <p
+                class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900sm:text-4xl"
+            >
+                Empiza a lucir tu estilo con nosotros
+            </p>
+            <p class="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
+                Aquí, cada prenda cuenta una historia y cada estilo refleja una
+                identidad única. Descubre un mundo donde tu elección de ropa no
+                solo te viste, sino que también te define, donde cada detalle es
+                una expresión de tu individualidad y estilo personal.
+            </p>
+        </div>
+
+        <div class="mt-10">
+            <dl
+                class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0"
+            >
+                {
+                    features.map((feature) => (
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex h-6 w-6 items-center justify-center rounded-md bg-purple-500 text-white" />
+                                <p class="ml-16 text-lg font-bold leading-6 text-gray-900 ">
+                                    {feature.name}
+                                </p>
+                            </dt>
+                            <dd class="ml-16 mt-2 text-base text-gray-60">
+                                {feature.description}
+                            </dd>
+                        </div>
+                    ))
+                }
+            </dl>
+        </div>
+    </div>
+</div>
