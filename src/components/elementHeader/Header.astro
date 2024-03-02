@@ -21,7 +21,11 @@ const navItems = [
     },
     {
         title: "Blog",
-        url: "/blog",
+        url: "#",
+        children: [
+            {title:"Políticas de Dolcemaro S.A", url:""},
+            {title:"Nuestras Actualizaciones", url:""},
+        ]
     },
     {
         title: "Contacto",
@@ -58,9 +62,16 @@ const navItems = [
             <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
                 <ul class="flex flex-col lg:flex-row lg:gap-3">
                     {
-                        navItems.map((item) => (
+                        navItems.map((item, index) => (
                             <>
-                                {item && (
+                                {item.children &&(
+                                    <Dropdown
+                                        title={item.title}
+                                        children={item.children}
+                                        lastItem={index === navItems.length -1}
+                                    />
+                                )}
+                                {!item.children && (
                                     <li>
                                         <a
                                             href={item.url}
