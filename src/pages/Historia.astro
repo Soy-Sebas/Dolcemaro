@@ -28,7 +28,7 @@ const EXPERIENCIE = [
     <section class="relative border overflow-hidden mt-16 bg-white">
         <div class="mx-auto max-w-7xl">
             <div
-                class="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32"
+                class="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-28"
             >
                 <svg
                     class="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
@@ -37,7 +37,7 @@ const EXPERIENCIE = [
                     preserveAspectRatio="none"
                     aria-hidden="true"
                 >
-                    <polygon points="50,0 100,0 50,100 0,100"></polygon>
+                    <polygon points="50,0 100,0 ,100 0,100"></polygon>
                 </svg>
                 <main
                     class="mx-auto max-w-7xl px-4 pt-10 sm:px-6 sm:pt-12 md:pt-16 lg:px-8 lg:pt-20 xl:pt-28 animate-fade-right animate-once animate-ease-linear"
@@ -105,7 +105,7 @@ const EXPERIENCIE = [
             />
         </div>
     </section>
-    <section class="bg-gray-100">
+    <section id="lineadetiempo" class="bg-gray-100">
         <div class="text-center sm:text-left">
             <h1
                 class="text-purple-800 mx-4 text-left sm:text-center text-2xl pt-10 pb-3 font-extrabold tracking-tight sm:text-5xl md:text-4xl"
@@ -115,7 +115,7 @@ const EXPERIENCIE = [
             <p
                 class="mx-4 text-left sm:text-center mt-4 max-w-5xl text-base lg:text-xl text-gray-600 lg:mx-auto pb-5 text-pretty"
             >
-                Llevamos en operación <strong class="font-bold text-black">8 meses desde septiembre de 2023 hasta abril de 2024</strong>. En donde los primeros cuatro meses (sep-dic 2023) <strong class="font-bold text-black">fuimos una empresa comercializadora</strong>. Al comenzar nuestro siguiente año de operación implementamos a nuestras actividades la producción, por lo que <strong class="font-bold text-black">actualmente somos una empresa mixta</strong> la cual realizo un presupuesto para los siguientes 8 meses, es decir, hasta diciembre de 2024. Antes de contar sobre las operaciones del Dolceamaro S.A tengamos en cuenta nuestro paso por el SENA (Centrod de Servicios Financieros)
+                Llevamos en operación <strong class="font-bold text-black">8 meses desde septiembre de 2023 hasta abril de 2024</strong>. En donde los primeros cuatro meses (sep-dic 2023) <strong class="font-bold text-black">fuimos una empresa comercializadora</strong>. Al comenzar nuestro siguiente año de operación implementamos a nuestras actividades la producción, por lo que <strong class="font-bold text-black">actualmente somos una empresa mixta</strong> la cual realizo un presupuesto para los siguientes 8 meses, es decir, hasta diciembre de 2024.
             </p>
             <p
                 class="mx-4 text-left sm:text-center mt-4 max-w-5xl text-base lg:text-xl text-gray-600 lg:mx-auto pb-16 text-pretty"
@@ -124,7 +124,7 @@ const EXPERIENCIE = [
             </p>
         </div>
         <div class="w-[340px] mx-auto lg:w-[1000px] pb-24">
-            <ol id="lineadetiempo" class="lineadetiempo relative">
+            <ol class="relative">
                 {
                     EXPERIENCIE.map((experiencie) => (
                         <li class="">
