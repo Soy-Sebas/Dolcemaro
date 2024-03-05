@@ -17,7 +17,7 @@ const { description, title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/logo-Apr.png" />
+		<link rel="icon" type="image/svg+xml" href="/Logofondo.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -104,23 +104,22 @@ const { description, title } = Astro.props;
 
 	@media screen and (max-width: 768px) {
 		.shine-text {
-		background-image: linear-gradient(
-			-250deg,
-			#fff 0%,
-			#5503af 29%,
-			#6f17ce 67%,
-			#8f41e2 100%
-		);
-		background-size: 200% auto;
-		color: #fff;
-		background-clip: text;
-		text-fill-color: transparent;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: textclip 6s linear infinite;
+			background-image: linear-gradient(
+				-250deg,
+				#fff 0%,
+				#5503af 29%,
+				#6f17ce 67%,
+				#8f41e2 100%
+			);
+			background-size: 200% auto;
+			color: #fff;
+			background-clip: text;
+			text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: textclip 6s linear infinite;
+		}
 	}
-	}
-	
 
 	.divaccordion {
 		display: flex;
@@ -332,6 +331,21 @@ const { description, title } = Astro.props;
 			translate: -50% 0;
 			opacity: 1;
 			visibility: visible;
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+		.marquee_content {
+			animation: scrolling 28s linear infinite;
+		}
+	}
+
+	@keyframes scrolling {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-100%);
 		}
 	}
 </style>
