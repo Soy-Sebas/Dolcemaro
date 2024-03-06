@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer.astro";
 import Container from "../components/Container.astro";
+import SobreNosotrosItem from "../components/sobreNosotrosItem.astro";
 ---
 
 <Layout
@@ -9,70 +9,529 @@ import Container from "../components/Container.astro";
     description="La mejor página de tu vida"
 >
     <Container>
-        <div
-            class="absolute items-center text-center w-full max-w-screen mt-auto mx-auto py-24"
-        >
-            <h1 class="text-black text-5xl font-semibold">Nuestro Equipo</h1>
-            <p class="py-2">
-                Especializados en diseñar y ejecutar soluciones<br />
-                únicas para impulsar el éxito en cada proyecto.
-            </p>
-        </div>
-        <section>
-            <div class="divaccordion py-56">
-                <ul class="accordion">
-                    <li>
-                        <img src="/s1.JPG" />
-                        <div class="content">
-                            <span>
-                                <h2>Sebastián Gutiérrez</h2>
-                                <p class="py-4">Presidente</p>
-                                <a class="bg-purple-800 text-white text-xs lg:text-base px-1 py-1 lg:px-2 lg:py-2 rounded text-center" href="/Historia">Saber más...</a>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="/v1.JPG" />
-                        <div class="content">
-                            <span>
-                                <h2>Valeria Cruz</h2>
-                                <p class="py-4">Directora de Ventas</p>
-                                <a class="bg-purple-800 text-white text-xs lg:text-base px-1 py-1 lg:px-2 lg:py-2 rounded text-center" href="/Historia">Saber más...</a>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="/j1.JPG" />
-                        <div class="content">
-                            <span>
-                                <h2>Juan Bonilla</h2>
-                                <p class="py-4">Director de Producción</p>
-                                <a class="bg-purple-800 text-white text-xs lg:text-base px-1 py-1 lg:px-2 lg:py-2 rounded text-center" href="/Historia">Saber más...</a>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="/vivi1.JPG" />
-                        <div class="content">
-                            <span>
-                                <h2>Viviana Moreno</h2>
-                                <p class="py-4">Directora de Finanzas</p>
-                                <a class="bg-purple-800 text-white text-xs lg:text-base px-1 py-1 lg:px-2 lg:py-2 rounded text-center" href="/Historia">Saber más...</a>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="/js1.JPG" />
-                        <div class="content">
-                            <span>
-                                <h2>Justin Estevez</h2>
-                                <p class="py-4">Director Recursos Humanos</p>
-                                <a class="bg-purple-800 text-white text-xs lg:text-base px-1 py-1 lg:px-2 lg:py-2 rounded text-center" href="/Historia">Saber más...</a>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
+        <SobreNosotrosItem />
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
+                <div class="relative">
+                    <div
+                        class="absolute hidden md:block w-96 h-96 bg-purple-100 rounded-full right-0 top-1/3 -z-10"
+                    >
+                    </div>
+                    <div
+                        class="absolute hidden md:block w-44 h-44 bg-purple-100 rounded-full left-10 top-1/4 -z-10"
+                    >
+                    </div>
+                    <picture>
+                        <img
+                            src="/s1.jpeg"
+                            alt=""
+                            class="rounded-xl w-full max-w-md mx-auto shadow-2xl"
+                            decoding="async"
+                            height="1652"
+                            width="1270"
+                            loading="lazy"
+                        />
+                    </picture>
+                </div>
+                <div class="place-self-center">
+                    <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+                        <span
+                            >Nuestra <strong class="text-purple-700"
+                                >Misión</strong
+                            ></span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500"
+                    >
+                        "Brindar nuevas experiencias al usuario, por medio de
+                        prendas de vestir que se adapten al estilo, forma e
+                        identidad del mismo, llevando mucho más allá el concepto
+                        de la moda actual; al igual que marcando y creando
+                        tendencias conectadas a las necesidades de la persona
+                        que porta cualquiera de nuestros productos”
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
+                <div class="hidden md:block place-self-center">
+                    <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+                        <span
+                            >Nuestra <strong class="text-purple-700"
+                                >Visión</strong
+                            ></span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500"
+                    >
+                        “A futuro esperamos ser reconocidos como una marca
+                        inclusiva que comprende las necesidades de sus clientes
+                        y los incorpora en la identidad de sus prendas,
+                        brindando así una experiencia de compra memorable”.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute hidden md:block w-96 h-96 bg-purple-100 rounded-full right-0 top-1/3 -z-10"
+                    >
+                    </div>
+                    <div
+                        class="absolute hidden md:block w-44 h-44 bg-purple-100 rounded-full left-10 top-1/4 -z-10"
+                    >
+                    </div>
+                    <picture>
+                        <img
+                            src="/s1.jpeg"
+                            alt=""
+                            class="rounded-xl w-full max-w-md mx-auto shadow-2xl"
+                            decoding="async"
+                            height="1652"
+                            width="1270"
+                            loading="lazy"
+                        />
+                    </picture>
+                </div>
+                <div class="visible md:hidden place-self-center">
+                    <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+                        <span
+                            >Nuestra <strong class="text-purple-700"
+                                >Visión</strong
+                            ></span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500"
+                    >
+                        “A futuro esperamos ser reconocidos como una marca
+                        inclusiva que comprende las necesidades de sus clientes
+                        y los incorpora en la identidad de sus prendas,
+                        brindando así una experiencia de compra memorable”.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
+                <div class="relative">
+                    <div
+                        class="absolute hidden md:block w-96 h-96 bg-purple-100 rounded-full right-0 top-1/3 -z-10"
+                    >
+                    </div>
+                    <div
+                        class="absolute hidden md:block w-44 h-44 bg-purple-100 rounded-full left-10 top-1/4 -z-10"
+                    >
+                    </div>
+                    <picture>
+                        <img
+                            src="/s1.jpeg"
+                            alt=""
+                            class="rounded-xl w-full max-w-md mx-auto shadow-2xl"
+                            decoding="async"
+                            height="1652"
+                            width="1270"
+                            loading="lazy"
+                        />
+                    </picture>
+                </div>
+                <div class="place-self-center">
+                    <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+                        <span
+                            >Objetivo <strong class="text-purple-700"
+                                >General</strong
+                            ></span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500"
+                    >
+                        "Ser reconocidos por marcar la diferencia en el mercado
+                        nacional, logrando que cada cliente se sienta cómodo y
+                        representado en cada uno de los productos que lleve
+                        consigo."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
+                <div class="hidden md:block place-self-center">
+                    <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+                        <span
+                            >Objetivos <strong class="text-purple-700"
+                                >Específicos</strong
+                            ></span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500"
+                    >
+                        "Nuestros objetivos específicos son claros: ofrecer
+                        productos de calidad, brindar un servicio excepcional y
+                        superar las expectativas de nuestros clientes en cada
+                        interacción. Buscamos liderar en innovación, mantener
+                        estándares éticos elevados y contribuir positivamente a
+                        la comunidad."
+                    </p>
+                    <ul class="grid mt-6 text-left gap-y-4">
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Establecer estrategias que permitan un margen
+                                de utilidad estable en los primeros 2 años de
+                                operación.</span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Extender el alcance de la empresa por medio no solo de nuevas sucursales, sino de
+                                las ventas on-line.
+                                </span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Fomentar en los empleados una cultura de honestidad e innovación.</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute hidden md:block w-96 h-96 bg-purple-100 rounded-full right-0 top-1/3 -z-10"
+                    >
+                    </div>
+                    <div
+                        class="absolute hidden md:block w-44 h-44 bg-purple-100 rounded-full left-10 top-1/4 -z-10"
+                    >
+                    </div>
+                    <picture>
+                        <img
+                            src="/s1.jpeg"
+                            alt=""
+                            class="rounded-xl w-full max-w-md mx-auto shadow-2xl"
+                            decoding="async"
+                            height="1652"
+                            width="1270"
+                            loading="lazy"
+                        />
+                    </picture>
+                </div>
+                <div class="visible md:hidden place-self-center">
+                    <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+                        <span
+                            >Valores <strong class="text-purple-700"
+                                >Corporativos</strong
+                            ></span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500"
+                    >
+                        "Nuestros valores corporativos son la base de nuestra
+                        empresa: excelencia, integridad e innovación. Guiados
+                        por el respeto, la colaboración y el compromiso,
+                        buscamos el éxito en cada paso que damos."
+                    </p>
+                    <ul class="grid mt-6 text-left gap-y-4">
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Innovación y aprendizaje constante.</span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Excelencia y calidad.</span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Honestidad y respeto.</span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600">Compromiso.</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600">Inclusión.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
+                <div class="relative">
+                    <div
+                        class="absolute hidden md:block w-96 h-96 bg-purple-100 rounded-full right-0 top-1/3 -z-10"
+                    >
+                    </div>
+                    <div
+                        class="absolute hidden md:block w-44 h-44 bg-purple-100 rounded-full left-10 top-1/4 -z-10"
+                    >
+                    </div>
+                    <picture>
+                        <img
+                            src="/s1.jpeg"
+                            alt=""
+                            class="rounded-xl w-full max-w-md mx-auto shadow-2xl"
+                            decoding="async"
+                            height="1652"
+                            width="1270"
+                            loading="lazy"
+                        />
+                    </picture>
+                </div>
+                <div class="place-self-center">
+                    <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+                        <span
+                            >Valores <strong class="text-purple-700"
+                                >Corporativos</strong
+                            ></span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500"
+                    >
+                        "Nuestros valores corporativos son la base de nuestra
+                        empresa: excelencia, integridad e innovación. Guiados
+                        por el respeto, la colaboración y el compromiso,
+                        buscamos el éxito en cada paso que damos."
+                    </p>
+                    <ul class="grid mt-6 text-left gap-y-4">
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Innovación y aprendizaje constante.</span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Excelencia y calidad.</span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600"
+                                >Honestidad y respeto.</span
+                            >
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600">Compromiso.</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-800">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 256 256"
+                                class="w-5 h-5"
+                                data-icon="ph:check-circle-fill"
+                            >
+                                <symbol id="ai:ph:check-circle-fill">
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32"
+                                    ></path>
+                                </symbol>
+                                <use xlink:href="#ai:ph:check-circle-fill"
+                                ></use>
+                            </svg>
+                            <span class="text-slate-600">Inclusión.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </Container>
 </Layout>
