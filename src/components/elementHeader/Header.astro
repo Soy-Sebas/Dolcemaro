@@ -23,9 +23,9 @@ const navItems = [
         title: "Blog",
         url: "#",
         children: [
-            {title:"Políticas de Dolcemaro S.A", url:""},
-            {title:"Nuestras Actualizaciones", url:""},
-        ]
+            { title: "Políticas de Dolcemaro S.A", url: "" },
+            { title: "Nuestras Actualizaciones", url: "" },
+        ],
     },
     {
         title: "Contacto",
@@ -43,16 +43,41 @@ const navItems = [
             <div
                 class="flex w-full xl:w-auto lg:ml-20 2xl:w-auto 2xl:ml-32 items-center justify-between"
             >
-                <img 
-                    src="/Logofondo.png"
-                    class="w-10 lg:mr-2 rounded-full"
-                />
                 <a
                     href="/"
                     class="text-lg 2xl:mr-32 flex items-center flex-wrap"
                 >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 80 90"
+                        width="60"
+                        height="40"
+                    >
+                        <text
+                            x="32"
+                            y="52"
+                            font-family="Barett Street"
+                            font-size="42"
+                            fill="black"
+                        >
+                            D
+                        </text>
+
+                        <text
+                            x="0"
+                            y="98"
+                            font-family="Barett Street"
+                            font-size="40"
+                            fill="black"
+                            transform="rotate(180 38 65)"
+                        >
+                            D
+                        </text>
+                    </svg>
                     <span class="font-semibold text-black"
-                        >Dolce<strong class="text-[#5503af] font-bold">amaro</strong> S.A</span
+                        >Dolce<strong class="text-[#5503af] font-bold"
+                            >amaro</strong
+                        > S.A</span
                     >
                 </a>
                 <div class="block xl:hidden">
@@ -64,11 +89,11 @@ const navItems = [
                     {
                         navItems.map((item, index) => (
                             <>
-                                {item.children &&(
+                                {item.children && (
                                     <Dropdown
                                         title={item.title}
                                         children={item.children}
-                                        lastItem={index === navItems.length -1}
+                                        lastItem={index === navItems.length - 1}
                                     />
                                 )}
                                 {!item.children && (
