@@ -6,21 +6,24 @@ import "photoswipe/style.css";
     {
         Array.from({ length: 9 }).map((_, i) => (
             <a
-                class="group rounded-xl hover:scale-105 transition-all relative"
-                href={`/gallery/img-${i + 1}.jpg`}
+                class="group rounded-xl hover:scale-105 transition-all relative aspect-square"
+                href={`/gallery/img-${i + 1}.webp`}
                 target="_blank"
+                data-cropped="true"
+                data-pswp-width="700"
+                data-pswp-height="525"
             >
-                <img 
-                    class="blur-3xl absolute inset-0 transition group-hover:constrast-150 opacity-70 -z-10"
-                    loading="lazy"           
-                    src={`/gallery/img-${i + 1}.webp`} 
-                    alt="" 
+                <img
+                    class="rounded-xl aspect-square object-cover"
+                    loading="lazy"
+                    src={`/gallery/img-${i + 1}-thumb.webp`}
+                    alt=""
                 />
-                <img 
-                    class="rounded-xl"
-                    loading="lazy"           
-                    src={`/gallery/img-${i + 1}.webp`} 
-                    alt="" 
+                <img
+                    class="blur-lg absolute inset-0 transition group-hover:constrast-150 opacity-70 -z-10  aspect-square object-cover"
+                    loading="lazy"
+                    src={`/gallery/img-${i + 1}-thumb.webp`}
+                    alt=""
                 />
             </a>
         ))
@@ -33,6 +36,6 @@ import "photoswipe/style.css";
         gallery: "#gallery",
         children: "a",
         pswpModule: () => import("photoswipe"),
-    });
+    }); 
     lightbox.init();
 </script>
