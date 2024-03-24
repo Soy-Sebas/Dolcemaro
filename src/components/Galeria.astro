@@ -2,15 +2,25 @@
 import "photoswipe/style.css";
 ---
 
-<div class="grid grid-cols-3" id="gallery">
+<div class="grid grid-cols-3 max-w-6xl gap-8 mx-auto py-20" id="gallery">
     {
         Array.from({ length: 9 }).map((_, i) => (
-            <a  href={`/gallery/img-${i + 1}.jpg`}
+            <a
+                class="group rounded-xl hover:scale-105 transition-all relative"
+                href={`/gallery/img-${i + 1}.jpg`}
                 target="_blank"
             >
-                <img
-                src={`/gallery/img-${i + 1}.webp`}
-                alt=""
+                <img 
+                    class="blur-3xl absolute inset-0 transition group-hover:constrast-150 opacity-70 -z-10"
+                    loading="lazy"           
+                    src={`/gallery/img-${i + 1}.webp`} 
+                    alt="" 
+                />
+                <img 
+                    class="rounded-xl"
+                    loading="lazy"           
+                    src={`/gallery/img-${i + 1}.webp`} 
+                    alt="" 
                 />
             </a>
         ))
